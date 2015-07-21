@@ -49,10 +49,11 @@ Add a separator for objects variable.
 	"main": "#F00",
 	"secondary": "#FF0"
 }
+```
 
+```stylus
 colors-main = #F00
 colors-secondary = #F00
-
 
 ```
 
