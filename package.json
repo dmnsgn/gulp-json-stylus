@@ -1,6 +1,6 @@
 {
   "name": "gulp-json-stylus",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Gulp plugin that converts JSON files into stylus variables.",
   "license": "MIT",
   "repository": {
@@ -15,6 +15,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "main": "index.js",
   "files": [
     "index.js"
   ],
@@ -24,13 +25,13 @@
     "stylus"
   ],
   "dependencies": {
+    "through2": "^0.6.5",
     "gulp-util": "^3.0.4",
-    "through2": "^0.6.5"
-  },
-  "devDependencies": {
     "gulp-match": "^0.2.1",
     "is-json": "^1.2.5",
-    "is-string": "^1.0.4",
+    "is-string": "^1.0.4"
+  },
+  "devDependencies": {
     "mocha": "*"
   },
   "scripts": {
