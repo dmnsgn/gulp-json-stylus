@@ -1,15 +1,11 @@
 var through = require('through2');
 var isJSON = require('is-json');
+var isString = require('is-string');
 
 var gutil = require('gulp-util');
 var gulpmatch = require('gulp-match');
 
 const PLUGIN_NAME = 'gulp-json-stylus';
-
-function isString(x) {
-  var type = Object.prototype.toString.apply(x);
-  return type.slice(type.indexOf(' ') + 1, -1) === 'String' && isNaN(Number(x));
-}
 
 module.exports = function(options) {
   options = options || {};

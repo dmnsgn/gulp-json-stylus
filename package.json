@@ -30,6 +30,7 @@
   "devDependencies": {
     "gulp-match": "^0.2.1",
     "is-json": "^1.2.5",
+    "is-string": "^1.0.4",
     "mocha": "*"
   },
   "scripts": {
