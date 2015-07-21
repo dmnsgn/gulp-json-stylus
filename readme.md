@@ -37,6 +37,26 @@ Default: `''`
 
 Add a namespace before each variable name.
 
+##### separator
+
+Type: `string`  
+Default: `'-'`
+
+Add a separator for objects variable.
+
+```json
+"colors": {
+	"main": "#F00",
+	"secondary": "#FF0"
+}
+
+colors-main = #F00
+colors-secondary = #F00
+
+
+```
+
+
 
 ## License
 

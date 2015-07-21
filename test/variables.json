@@ -2,8 +2,8 @@
 	"grid-width": 1080,
 	"columns": 12,
 	"font-sans": "Open Sans",
-	"colors" {
+	"colors": {
 		"main": "#F00",
-		"secondary": "#F00"
+		"secondary": "#FF0"
 	}
 }

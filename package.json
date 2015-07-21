@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "description": "Gulp plugin that converts JSON files into stylus variables.",
   "license": "MIT",
-  "repository": "https://github.com/dmnsgn/gulp-json-stylus",
-  "author": "Damien Seguin <https://twitter.com/dmnsgn>",
-  "homepage": "https://github.com/dmnsgn/gulp-json-stylus",
   "repository": {
     "type": "git",
     "url": "https://github.com/dmnsgn/gulp-json-stylus"
   },
+  "author": "Damien Seguin <https://twitter.com/dmnsgn>",
+  "homepage": "https://github.com/dmnsgn/gulp-json-stylus",
   "issues": {
     "url": "https://github.com/dmnsgn/gulp-json-stylus/issues"
   },
@@ -29,6 +28,8 @@
     "through2": "^0.6.5"
   },
   "devDependencies": {
+    "gulp-match": "^0.2.1",
+    "is-json": "^1.2.5",
     "mocha": "*"
   },
   "scripts": {
