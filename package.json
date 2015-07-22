@@ -35,6 +35,6 @@
     "mocha": "*"
   },
   "scripts": {
-    "test": "mocha ./test/test.js -w"
+    "test": "mocha ./test/test.js"
   }
 }
