@@ -14,11 +14,11 @@ $ npm install --save-dev gulp-json-stylus
 
 ```js
 var gulp = require('gulp');
-var gulpJsonStylus = require('gulp-json-stylus');
+var jsonStylus = require('gulp-json-stylus');
 
 gulp.task('default', function () {
 	return gulp.src('src/file.json')
-		.pipe(gulpJsonStylus())
+		.pipe(jsonStylus())
 		.pipe(gulp.dest('dist'));
 });
 ```
@@ -26,7 +26,7 @@ gulp.task('default', function () {
 
 ## API
 
-### gulpJsonStylus(options)
+### jsonStylus(options)
 
 #### options
 
@@ -58,7 +58,8 @@ colors-secondary = #F00
 ```
 
 
-
 ## License
+
+Inspired by [gulp-json-sass](https://github.com/rbalicki2/gulp-json-sass)
 
 MIT © [Damien Seguin](http://dmnsgn.me)
