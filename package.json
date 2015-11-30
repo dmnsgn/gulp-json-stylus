@@ -25,13 +25,15 @@
     "stylus"
   ],
   "dependencies": {
-    "through2": "^0.6.5",
-    "gulp-util": "^3.0.4",
     "gulp-match": "^0.2.1",
-    "is-json": "^1.2.5",
-    "is-string": "^1.0.4"
+    "gulp-util": "^3.0.4",
+    "is-string": "^1.0.4",
+    "parse-json": "^2.2.0",
+    "through2": "^0.6.5"
   },
   "devDependencies": {
+    "chai": "*",
+    "gulp": "^3.9.0",
     "mocha": "*"
   },
   "scripts": {

@@ -1,5 +1,5 @@
 var through = require('through2');
-var isJSON = require('is-json');
+var parseJson = require('parse-json');
 var isString = require('is-string');
 
 var gutil = require('gulp-util');
@@ -48,10 +48,11 @@ module.exports = function(options) {
     }
 
     var fileContent = file.contents.toString();
-    if (isJSON(fileContent)) {
+
+    try {
 
       var variables = [];
-      addVariablesRecursive(JSON.parse(file.contents), '', function pushVariable(variable) {
+      addVariablesRecursive(parseJson(file.contents), '', function pushVariable(variable) {
         variables.push(variable);
       });
 
@@ -63,8 +64,9 @@ module.exports = function(options) {
         this.emit('error', new gutil.PluginError(PLUGIN_NAME, err));
       }
       cb();
-    } else {
-      cb(new gutil.PluginError(PLUGIN_NAME, 'JSON is not valid.'));
+
+    } catch (err) {
+      this.emit('error', new gutil.PluginError(PLUGIN_NAME, err));
     }
 
   });

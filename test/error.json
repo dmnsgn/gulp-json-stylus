@@ -1,0 +1,10 @@
+{
+	// A comment that fail the JSON parsing
+	"grid-width": 1080,
+	"columns": 12,
+	"font-sans": "Open Sans",
+	"colors": {
+		"main": "#F00",
+		"secondary": "#FF0"
+	}
+}
